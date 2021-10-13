@@ -1,14 +1,14 @@
 const fs = require('fs');
 const path = require('path');
-
 const express = require('express');
-const PORT = process.env.PORT || 3001;
+const { animals } = require('./data/animals');
 
+const PORT = process.env.PORT || 3001;
 const app = express();
-app.use(express.urlencoded({ extended: true}));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const { animals } = require('./data/animals');
 const { type } = require('os');
 
 function filterByQuery(query, animalsArray) {
