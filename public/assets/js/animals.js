@@ -1,3 +1,5 @@
+// const { query, response } = require('express'); This was here and broke the program.
+
 const $animalForm = document.querySelector('#animals-form');
 const $displayArea = document.querySelector('#display-area');
 
@@ -30,6 +32,17 @@ const getAnimals = (formData = {}) => {
   });
 
   console.log(queryUrl);
+  fetch(queryUrl)
+    .then(response => {
+      if(!response.ok) {
+        return alert('Error: ' + response.statusText);
+      }
+      return response.json();
+    })
+    .then(animalData => {
+      console.log(animalData);
+      printResults(animalData);
+    });
 
 };
 
@@ -58,7 +71,7 @@ const handleGetAnimalsSubmit = event => {
   const personalityTraits = personalityTraitArr.join(',');
 
   const animalObject = { diet, personalityTraits };
-
+  
   getAnimals(animalObject);
 };
 
