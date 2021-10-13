@@ -8,8 +8,10 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 const { type } = require('os');
+const exp = require('constants');
 
 function filterByQuery(query, animalsArray) {
   let personalityTraitsArray = [];
@@ -99,6 +101,10 @@ app.get('/api/animals/:id', (req, res) => {
     res.send(404);
   }
 });
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+  });
 
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
