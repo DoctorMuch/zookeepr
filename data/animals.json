@@ -173,6 +173,45 @@
         "goofy"
       ],
       "id": "17"
+    },
+    {
+      "name": "stinky",
+      "species": "rabbit",
+      "diet": "piscivore",
+      "personalityTraits": [
+        "hungry",
+        "goofy"
+      ],
+      "id": "18"
+    },
+    {
+      "name": "elphants ",
+      "species": "rabbit",
+      "diet": "folivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "19"
+    },
+    {
+      "name": "buckbeack",
+      "species": "hippogryff",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "20"
+    },
+    {
+      "name": "fred",
+      "species": "sea turtle",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving",
+        "goofy"
+      ],
+      "id": "21"
     }
   ]
 }
