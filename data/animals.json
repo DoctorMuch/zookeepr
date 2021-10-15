@@ -164,6 +164,15 @@
         "anxious"
       ],
       "id": "16"
+    },
+    {
+      "name": "Ellie",
+      "species": "Elephant",
+      "diet": "folivore",
+      "personalityTraits": [
+        "goofy"
+      ],
+      "id": "17"
     }
   ]
 }

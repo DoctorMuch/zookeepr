@@ -1,4 +1,3 @@
-// const { query, response } = require('express'); This was here and broke the program.
 
 const $animalForm = document.querySelector('#animals-form');
 const $displayArea = document.querySelector('#display-area');
