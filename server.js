@@ -10,7 +10,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 // const { animals } = require('./data/animals');
 
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'));
 
